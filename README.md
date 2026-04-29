@@ -1,41 +1,41 @@
-# AI Customer Service
+# AI 客服系统
 
-A Java-based intelligent customer service system with routing, compression, and data closure capabilities.
+一个基于 Java 的智能客服系统，具备请求路由、数据压缩和安全数据闭包功能。
 
-## Features
-- **Smart Request Routing**: Efficiently routes customer inquiries to appropriate handlers
-- **Data Compression**: Reduces network payload size while maintaining data integrity
-- **Secure Data Closure**: Ensures sensitive customer information is properly handled and secured
+## 核心功能
+- **智能请求路由**：高效地将客户咨询分配给合适的处理模块
+- **数据压缩**：在保持数据完整性的同时减少网络传输负载
+- **安全数据闭包**：确保客户敏感信息得到妥善处理和保护
 
-## Technical Stack
-- **Language**: Java 17
-- **Framework**: Spring Boot 3.2
-- **Build Tool**: Maven
-- **AI Integration**: TensorFlow Lite for on-device inference
-- **API Gateway**: Spring Cloud Gateway
-- **Database**: PostgreSQL with JDBC Template
-- **Logging**: SLF4J with Logback
+## 技术架构
+- **开发语言**：Java 17
+- **核心框架**：Spring Boot 3.2
+- **构建工具**：Maven
+- **AI 集成**：TensorFlow Lite（用于设备端推理）
+- **API 网关**：Spring Cloud Gateway
+- **数据库**：PostgreSQL + JDBC Template
+- **日志系统**：SLF4J with Logback
 
-## Installation
+## 安装指南
 
 ```bash
-# Clone the repository
+# 克隆仓库
 git clone https://github.com/Leixiaoheng201/ai-customer-service.git
 
-# Build the project
+# 构建项目
 mvn clean install
 
-# Run the application
+# 运行应用
 java -jar target/ai-customer-service.jar
 ```
 
-## Usage
+## 使用说明
 
-After starting the application, the service will be available at `http://localhost:8080`.
+启动后，服务将在 `http://localhost:8080` 可用。
 
-- Submit customer inquiries via POST to `/api/v1/inquiries`
-- View system status at `/actuator/health`
+- 通过 POST 请求提交咨询：`/api/v1/inquiries`
+- 查看系统状态：`/actuator/health`
 
-## License
+## 许可证
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+本项目采用 MIT 许可证 - 详情请参阅 [LICENSE](LICENSE) 文件。
