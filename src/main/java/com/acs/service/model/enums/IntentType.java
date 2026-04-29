@@ -1,0 +1,6 @@
+package com.acs.service.model.enums;
+
+public enum IntentType {
+    GENERAL_INQUIRY, ORDER_STATUS, REFUND_REQUEST,
+    COMPLAINT, TECHNICAL_SUPPORT, ACCOUNT_ISSUE, HIGH_RISK_ESCALATION
+}
